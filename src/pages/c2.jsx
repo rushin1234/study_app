@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
-import qs from '../assets/c2qs.pdf'
-import ans from '../assets/c2ans.pdf'
 import Title from '../components/Title'
+import Slider from '../components/Slider'
+import { ImgsContext } from '../context/imgs'
 
 export default function C2() {
+  const { c2qs, c2ans, c2link } = useContext(ImgsContext)
   return (
     <>
       <Title title="C2"/>
-      <iframe src={qs} frameborder="0"></iframe>
+      <Slider imgs={c2qs}/>
       <br /><br />
-      <iframe src={ans} frameborder="0"></iframe>
+      <Slider imgs={c2ans}/>
       <br /><br />
-      <a href="https://www.kopykitab.com/index.php?route=pdfviewer/view&product_id=57566&parent_id=5950204">Read book here</a>
+      <div className="booklink">
+      <a href={c2link}>Read book here</a>
+      </div>
       <br /><br />
     </>
   )

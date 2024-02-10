@@ -1,18 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
-import qs from '../assets/c1qs.pdf'
 import Title from '../components/Title'
+import Slider from '../components/Slider'
+
+import { ImgsContext } from '../context/imgs'
 
 export default function C1() {
-  
+  const { c1qs, c1link } = useContext(ImgsContext)
   return (
     <>
-      <Title title="C1"/>
-      <iframe src={qs} frameborder="0"></iframe>
-      {/* <embed src={qs} type="application/pdf" /> */}
-      {/* <object data={qs} type=""></object> */}
+      <Title title="C1" />
+      <Slider imgs={c1qs} />
       <br /><br />
-      <a href="https://www.kopykitab.com/index.php?route=pdfviewer/view&product_id=57565&parent_id=5950204">Read book here</a>
+      <div className="booklink">
+        <a href={c1link}>Read book here</a>
+      </div>
       <br /><br />
     </>
   )

@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Title from '../components/Title'
-
-// import pdf from "../assets/BSC.pdf"
-import qs from '../assets/m2qs.pdf'
-import ans from '../assets/m2ans.pdf'
+import Slider from '../components/Slider'
+import { ImgsContext } from '../context/imgs'
 
 export default function M2() {
+  const { m2qs, m2ans, m2link } = useContext(ImgsContext)
   return (
     <>
-    <Title title="M2" />
-      <iframe src={qs} frameborder="0"></iframe>
+      <Title title="M2" />
+      <Slider imgs={m2qs} />
       <br /><br />
-      <iframe src={ans} frameborder="0"></iframe>
+      <Slider imgs={m2ans} />
       <br /><br />
-      <a href="https://www.kopykitab.com/index.php?route=pdfviewer/view&product_id=57568&parent_id=5950204">Read book here</a>
+      <div className="booklink">
+        <a href={m2link}>Read book here</a>
+      </div>
+
       <br /><br />
     </>
   )

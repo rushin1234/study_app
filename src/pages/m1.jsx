@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
-import qs from '../assets/m1qs.pdf'
 import Title from '../components/Title'
+import Slider from '../components/Slider'
+import { ImgsContext } from '../context/imgs'
 
 export default function M1() {
+  const { m1qs, m1link } = useContext(ImgsContext)
   return (
     <>
-    <Title title="M1" />
-      <iframe src={qs} frameborder="0"></iframe>
+      <Title title="M1" />
+      <Slider imgs={m1qs}/>
       <br /><br />
-      <a className='booklink' href="https://www.kopykitab.com/index.php?route=pdfviewer/view&product_id=57567&parent_id=5950204">Read book here</a>
+      <div className="booklink">
+      <a href={m1link}>Read book here</a>
+      </div>
+      
       <br /><br />
     </>
   )
