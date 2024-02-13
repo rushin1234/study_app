@@ -9,7 +9,14 @@ import M1 from './pages/m1'
 import M2 from './pages/m2';
 import E1 from './pages/e1'
 import E2 from './pages/e2';
+
+import SEM3C1 from './pages/sem3c1'
 import SEM3C2 from './pages/sem3c2'
+import SEM3M1 from './pages/sem3m1'
+import SEM3M2 from './pages/sem3m2'
+import SEM3E1 from './pages/sem3e1'
+import SEM3E2 from './pages/sem3e2'
+import SEM3ENG from './pages/sem3eng'
 
 function App() {
   return (
@@ -23,7 +30,14 @@ function App() {
       <Route path='/e2' element={<E2 />} />
       <Route path='/m1' element={<M1 />} />
       <Route path='/m2' element={<M2 />} />
+
+      <Route path='/sem3c1' element={<SEM3C1 />} />
       <Route path='/sem3c2' element={<SEM3C2 />} />
+      <Route path='/sem3m1' element={<SEM3M1 />} />
+      <Route path='/sem3m2' element={<SEM3M2 />} />
+      <Route path='/sem3e1' element={<SEM3E1 />} />
+      <Route path='/sem3e2' element={<SEM3E2 />} />
+      <Route path='/sem3eng' element={<SEM3ENG />} />
     </Routes>
     </div>
     

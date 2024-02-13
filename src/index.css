@@ -1,7 +1,7 @@
 * {
     font-family: 'Ubuntu', sans-serif;
 }
-
+/* logo styling  */
 .logo {
     margin-left: 10px !important;
     border: none !important;
@@ -9,13 +9,13 @@
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
+/* navbar list items */
 a {
     margin: 0px 10px;
     width: fit-content;
     text-decoration: none;
 }
-
+/* book links styling at the end of each page */
 .booklink {
     text-decoration: none;
     font-size: 1rem;
@@ -27,7 +27,8 @@ a {
     left: 50%;
     transform: translateX(-50%);
 }
-.booklink a{
+
+.booklink a {
     border: none !important;
 }
 
@@ -42,9 +43,15 @@ a {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .slider {
         width: 95vw;
+    }
+
+    .list {
+        display: flex;
+        width: 98vw;
+        overflow: auto;
     }
 
     a {
