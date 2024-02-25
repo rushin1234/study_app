@@ -17,6 +17,7 @@ import SEM3M2 from './pages/sem3m2'
 import SEM3E1 from './pages/sem3e1'
 import SEM3E2 from './pages/sem3e2'
 import SEM3ENG from './pages/sem3eng'
+import SEM3EVS from './pages/sem3evs';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <Route path='/sem3e1' element={<SEM3E1 />} />
       <Route path='/sem3e2' element={<SEM3E2 />} />
       <Route path='/sem3eng' element={<SEM3ENG />} />
+      <Route path='/sem3evs' element={<SEM3EVS />} />
     </Routes>
     </div>
     

@@ -20,6 +20,7 @@ function Header() {
               <NavLink to="/sem3e1" className="nav-items">sem3 E1</NavLink>
               <NavLink to="/sem3e2" className="nav-items">sem3 E2</NavLink>
               <NavLink to="/sem3eng" className="nav-items">sem3 ENG</NavLink>
+              <NavLink to="/sem3evs" className="nav-items">sem3 EVS</NavLink>
             </div>
             <div className="list">
               <NavLink to="/c1" className="nav-items">sem4 C1</NavLink>

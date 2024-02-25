@@ -5,17 +5,15 @@ import Slider from '../components/Slider'
 
 import { ImgsContext } from '../context/imgs'
 
-export default function C1() {
-  const { c1qs, c1link, c1ans } = useContext(ImgsContext)
+export default function SEM3EVS() {
+  const { sem3evs } = useContext(ImgsContext)
   return (
     <>
-      <Title title="C1" />
-      <Slider imgs={c1qs} />
-      <br /><br />
-      <Slider imgs={c1ans} />
+      <Title title="EVS" />
+      <Slider imgs={sem3evs} />
       <br /><br />
       <div className="booklink">
-        <a href={c1link}>Read book here</a>
+        <a href=''>Read book here</a>
       </div>
       <br /><br />
     </>
