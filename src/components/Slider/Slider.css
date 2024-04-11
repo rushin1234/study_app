@@ -1,0 +1,11 @@
+
+.slider{
+    width: 100vw;
+    max-height: 99vh;
+    overflow: auto;
+    border: 1px solid;
+}
+
+.slider img{
+    width: 100%;
+}
