@@ -1,6 +1,7 @@
 import React, { Component, useContext, useState } from 'react'
 import './Navbar.css'
 import { ImgsContext } from '../../context/imgs'
+import List from '../List/List'
 
 
 const Navbar = () => {
@@ -18,6 +19,66 @@ const Navbar = () => {
     current, setCurrent
   } = useContext(ImgsContext)
 
+  const sem1 = [
+    { name: 'C1', path: sem1c1 },
+    { name: 'C2', path: sem1c2 },
+    { name: 'M1', path: sem1m1 },
+    { name: 'M2', path: sem1m2 },
+    { name: 'E1', path: sem1e1 },
+    { name: 'E2', path: sem1e2 },
+    { name: 'S1', path: sem1s1 },
+    { name: 'S2', path: sem1s2 }
+  ]
+  const sem2 = [
+    { name: 'C1', path: sem2c1 },
+    { name: 'C2', path: sem2c2 },
+    { name: 'M1', path: sem2m1 },
+    { name: 'M2', path: sem2m2 },
+    { name: 'E1', path: sem2e1 },
+    { name: 'E2', path: sem2e2 },
+    { name: 'S1', path: sem2s1 },
+    { name: 'S2', path: sem2s2 }
+  ]
+  const sem3 = [
+    { name: 'C1', path: sem3c1 },
+    { name: 'C2', path: sem3c2 },
+    { name: 'M1', path: sem3m1 },
+    { name: 'M2', path: sem3m2 },
+    { name: 'E1', path: sem3e1 },
+    { name: 'E2', path: sem3e2 },
+    { name: 'ENG', path: sem3eng },
+    { name: 'EVS', path: sem3evs }
+  ]
+  const sem4 = [
+    { name: 'C1', path: sem4c1 },
+    { name: 'C2', path: sem4c2 },
+    { name: 'M1', path: sem4m1 },
+    { name: 'M2', path: sem4m2 },
+    { name: 'E1', path: sem4e1 },
+    { name: 'E2', path: sem4e2 },
+    { name: 'ENG', path: sem4eng },
+    { name: 'EVS', path: sem4evs }
+  ]
+  const sem5 = [
+    { name: 'BlockChain', path: sem5bc },
+    { name: 'Computer Networks-2', path: sem5cn2 },
+    { name: 'Datascience', path: sem5ds },
+    { name: 'JAVA-1', path: sem5java1 },
+    { name: 'Operating System-1', path: sem5os1 },
+    { name: 'Python', path: sem5ptn },
+    { name: 'Therotical CS', path: sem5thecs },
+    { name: 'Web Technologies-1', path: sem5wt1 }
+  ]
+  const sem6 = [
+    { name: 'Compiler', path: sem6com },
+    { name: 'Data Analytics', path: sem6danalytics },
+    { name: 'JAVA-2', path: sem6java2 },
+    { name: 'Operating System-2', path: sem6os2 },
+    { name: 'Software Tesing', path: sem6softtest },
+    { name: 'Software Tesing & Tools', path: sem6softtest_tools },
+    { name: 'Web Technologies-2', path: sem6wt2 }
+  ]
+
   const [clicked, setClicked] = useState(false)
   const handleClick = () => {
     setClicked(!clicked)
@@ -34,91 +95,13 @@ const Navbar = () => {
           <ul id="navbar"
             className={clicked ?
               "#navbar active" : "#navbar"}>
-            <li><a href="">SEM 1</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem1c1)}}>C1</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem1c2)}}>C2</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem1m1)}}>M1</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem1m2)}}>M2</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem1e1)}}>E1</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem1e2)}}>E2</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem1s1)}}>S1</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem1s2)}}>S2</a></li>
-            <li><a href=""></a></li>
 
-            <li><a href="">SEM 2</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem2c1)}}>C1</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem2c2)}}>C2</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem2m1)}}>M1</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem2m2)}}>M2</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem2e1)}}>E1</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem2e2)}}>E2</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem2s1)}}>S1</a></li>
-            <li><a href="#" onClick={()=>{setCurrent(sem2s2)}}>S2</a></li>
-            <li><a href=""></a></li>
-
-            <li><a href="">SEM 3</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem3c1)}}>C1</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem3c2)}}>C2</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem3m1)}}>M1</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem3m2)}}>M2</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem3e1)}}>E1</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem3e2)}}>E2</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem3eng)}}>ENG</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem3evs)}}>EVS</a></li>
-            <li><a href="">M Practical</a></li>
-            <li><a href="">C Practical</a></li>
-            <li><a href="">E Practical</a></li>
-            <li><a href=""></a></li>
-
-            <li><a href="">SEM 4</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem4c1)}}>C1</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem4c2)}}>C2</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem4m1)}}>M1</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem4m2)}}>M2</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem4e1)}}>E1</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem4e2)}}>E2</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem4eng)}}>ENG</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem4evs)}}>EVS</a></li>
-            <li><a href="">M Practical</a></li>
-            <li><a href="">C Practical</a></li>
-            <li><a href="">E Practical</a></li>
-            <li><a href=""></a></li>
-
-            <li><a href="">SEM 5</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem5os1)}}>OS-1</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem5cn2)}}>CN-2</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem5wt1)}}>WT-1</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem5ds)}}>Datascience</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem5java1)}}>JAVA-1</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem5thecs)}}>Therotical CS</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem5ptn)}}>Python</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem5bc)}}>BlockChain</a></li>
-            <li><a href=""></a></li>
-
-            <li><a href="">SEM 6</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem6os2)}}>OS-2</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem6softtest)}}>Software Testing</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem6wt2)}}>WT-2</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem6danalytics)}}>Data Analytics</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem6java2)}}>JAVA-2</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem6com)}}>Compiler Construction</a></li>
-            <li><a href="#"  onClick={()=>{setCurrent(sem6softtest_tools)}}>Software Testing & Tools</a></li>
-            {/* <li><a href="#"  onClick={()=>{setCurrent(sem6bc)}}>BlockChain</a></li> */}
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+              <List title='SEM-1' subul={sem1} setCurrent={setCurrent} handleClick={handleClick}/>
+              <List title='SEM-2' subul={sem2} setCurrent={setCurrent} handleClick={handleClick}/>
+              <List title='SEM-3' subul={sem3} setCurrent={setCurrent} handleClick={handleClick}/>
+              <List title='SEM-4' subul={sem4} setCurrent={setCurrent} handleClick={handleClick}/>
+              <List title='SEM-5' subul={sem5} setCurrent={setCurrent} handleClick={handleClick}/>
+              <List title='SEM-6' subul={sem6} setCurrent={setCurrent} handleClick={handleClick}/>
 
           </ul>
         </div>
