@@ -57,7 +57,9 @@ const Navbar = () => {
     { name: 'E1', path: sem4e1 },
     { name: 'E2', path: sem4e2 },
     { name: 'ENG', path: sem4eng },
-    { name: 'EVS', path: sem4evs }
+    { name: 'EVS', path: sem4evs },
+    { name: 'C-Practical', path: null },
+    { name: 'M-Practical', path: null }
   ]
   const sem5 = [
     { name: 'BlockChain', path: sem5bc },

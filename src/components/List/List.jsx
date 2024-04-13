@@ -10,7 +10,7 @@ const List = (props) => {
     }
 
     return (
-        <li><a className='title' href="#" onClick={handle}>{props.title}</a>
+        <li><a className='title' href="#" onClick={handle}>{props.title }</a>
             <ul 
             className={clicked ?
                 "activeul" : "dropdown"}>
