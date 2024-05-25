@@ -1,0 +1,35 @@
+.up {
+    margin-bottom: 60px;
+}
+
+.up input {
+    display: none;
+    margin-top: 50px;
+}
+
+.up label {
+    padding: 5px 10px;
+    background-color: hsla(0, 0%, 19%);
+    color: white;
+    margin: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.up button {
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    background-color: tomato;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.loading-text {
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
