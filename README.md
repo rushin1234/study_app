@@ -1,8 +1,8 @@
 BSc Computer Science Past Papers
 This project provides a collection of past year question papers for Bachelor of Science in Computer Science students.
 
-Features:
-you can also add question papers
+Features: <br/>
+you can also add question papers 
 Organized by year (and semester)
 [demo here](https://sem4sybcs.netlify.app/)
 
